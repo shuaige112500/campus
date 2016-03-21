@@ -1,0 +1,20 @@
+<div ui-content-for="title">
+  <span>登录</span>
+</div>
+<div class="scrollable">
+ <div><img src="http://gcghrcampus.b0.upaiyun.com/static/images/banner.jpg" style="width: 100%;" /></div>
+ <div class="scrollable-content">
+  <form role="form" ng-submit='login()' id="hr-login">
+    <fieldset>
+        <div class="form-group has-success has-feedback">
+          <input type="tel" required pattern="^1\d{10}$" title="输入正确的手机号" class="form-control" ng-model="tel" placeholder="输入注册的手机号">
+        </div>
+    </fieldset>
+    <p><button class="btn btn-primary btn-block hr-login-buttom">登录</button></p>
+    <p><a href=""><i class="fa fa-pencil-square-o"></i> 新用户注册入口</a></p>
+  </form>
+  <section ng-hide="hideMsgOverlay" id="hr-msg-overlay">
+	<p ng-bind-html="overlayMsg"></p>
+  </section>
+ </div>
+</div>

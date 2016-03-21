@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>GCGHR Campus Admin</title>
+   	<!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../css/sb-admin.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">GCG HR Campus 管理平台</a>
+            </div>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li>
+                        <a href="index.html"> <i class="fa fa-edit fa-fw"></i>
+                            	留言&amp;提问
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="javascript:;" data-toggle="collapse" data-target="#adminContent"><i class="fa fa-fw fa-pencil"></i> 管理员留言 <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="adminContent" class="collapse">
+                            <li>
+                                <a href="adminContent.html?location=BJU">北京大学</a>
+                            </li>
+                            <li>
+                                <a href="adminContent.html?location=SHJTU">上海交通大学</a>
+                            </li>
+                            <li>
+                                <a href="adminContent.html?location=TJC">天津市大学软件学院</a>
+                            </li>
+                            <li>
+                                <a href="adminContent.html?location=WHTU">武汉理工大学</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#report"><i class="fa fa-fw fa-table"></i> 注册签到报表下载 <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="report" class="collapse">
+                            <li>
+                                <a id="downloadReportDJU" href="">同济大学</a>
+                            </li>
+                            <li>
+                                <a id="downloadReportBJU" href="">北京大学</a>
+                            </li>
+                            <li>
+                                <a id="downloadReportXAU" href="">西安电子科技大学</a>
+                            </li>
+                            <li>
+                                <a id="downloadReportTHU" href="">清华大学</a>
+                            </li>
+                            <li>
+                                <a id="downloadReportSHJTU" href="">上海交通大学</a>
+                            </li>
+                            <li>
+                                <a id="downloadReportTJC" href="">天津市大学软件学院</a>
+                            </li>
+                            <li>
+                                <a id="downloadReportWHTU" href="">武汉理工大学</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="lottery.html" target="_blank"> <i class="fa fa-fw fa-flag"></i>
+                            	摇一摇抽奖
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#screen"><i class="fa fa-fw fa-desktop"></i> 大屏幕显示 <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="screen" class="collapse">
+                            <li>
+                                <a target="_blank" href="QAlist.html#BJU">北京大学站</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="QAlist.html#SHJTU">上海交通大学站</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="QAlist.html#TJC">天津市大学软件学院</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="QAlist.html#WHTU">武汉理工大学</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                        	管理员留言列表
+                        </h1>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <div class="row" id="adminContentQuestion0">
+                    <div class="col-lg-1">
+                        <div class="checkbox"><label><input type="checkbox">显示</label></div>
+                    </div>
+                    <div class="col-lg-2">                        
+                        <input type="text" class="form-control"  placeholder="来自xxx">
+                    </div>
+                    <div class="col-lg-9">
+                        <input type="text" class="form-control" placeholder="留言内容(可以输入140字)" maxlength="140">
+                    </div>
+                </div>
+                <!-- /.row -->
+                <!-- /.row -->
+                <div class="row" id="adminContentQuestion1">
+                    <div class="col-lg-1">
+                        <div class="checkbox"><label><input type="checkbox">显示</label></div>
+                    </div>
+                    <div class="col-lg-2">                        
+                        <input type="text" class="form-control"  placeholder="来自xxx">
+                    </div>
+                    <div class="col-lg-9">
+                        <input type="text" class="form-control" placeholder="留言内容(可以输入140字)" maxlength="140">
+                    </div>
+                </div>
+                <!-- /.row -->
+                <!-- /.row -->
+                <div class="row" id="adminContentQuestion2">
+                    <div class="col-lg-1">
+                        <div class="checkbox"><label><input type="checkbox">显示</label></div>
+                    </div>
+                    <div class="col-lg-2">                        
+                        <input type="text" class="form-control"  placeholder="来自xxx">
+                    </div>
+                    <div class="col-lg-9">
+                        <input type="text" class="form-control" placeholder="留言内容(可以输入140字)" maxlength="140">
+                    </div>
+                </div>
+                <!-- /.row -->
+                <!-- /.row -->
+                <div class="row" id="adminContentQuestion3">
+                    <div class="col-lg-1">
+                        <div class="checkbox"><label><input type="checkbox">显示</label></div>
+                    </div>
+                    <div class="col-lg-2">                        
+                        <input type="text" class="form-control"  placeholder="来自xxx">
+                    </div>
+                    <div class="col-lg-9">
+                        <input type="text" class="form-control" placeholder="留言内容(可以输入140字)" maxlength="140">
+                    </div>
+                </div>
+                <!-- /.row -->
+                <!-- /.row -->
+                <div class="row" id="adminContentQuestion4">
+                    <div class="col-lg-1">
+                        <div class="checkbox"><label><input type="checkbox">显示</label></div>
+                    </div>
+                    <div class="col-lg-2">                        
+                        <input type="text" class="form-control"  placeholder="来自xxx">
+                    </div>
+                    <div class="col-lg-9">
+                        <input type="text" class="form-control" placeholder="留言内容(可以输入140字)" maxlength="140">
+                    </div>
+                </div>
+                <!-- /.row -->
+                <!-- /.row -->
+                <div class="row" id="adminContentQuestion5">
+                    <div class="col-lg-1">
+                        <div class="checkbox"><label><input type="checkbox">显示</label></div>
+                    </div>
+                    <div class="col-lg-2">                        
+                        <input type="text" class="form-control"  placeholder="来自xxx">
+                    </div>
+                    <div class="col-lg-9">
+                        <input type="text" class="form-control" placeholder="留言内容(可以输入140字)" maxlength="140">
+                    </div>
+                </div>
+                <!-- /.row -->
+                <!-- /.row -->
+                <div class="row" id="adminContentQuestion6">
+                    <div class="col-lg-1">
+                        <div class="checkbox"><label><input type="checkbox">显示</label></div>
+                    </div>
+                    <div class="col-lg-2">                        
+                        <input type="text" class="form-control"  placeholder="来自xxx">
+                    </div>
+                    <div class="col-lg-9">
+                        <input type="text" class="form-control" placeholder="留言内容(可以输入140字)" maxlength="140">
+                    </div>
+                </div>
+                <!-- /.row -->
+                <!-- /.row -->
+                <div class="row" id="adminContentQuestion7">
+                    <div class="col-lg-1">
+                        <div class="checkbox"><label><input type="checkbox">显示</label></div>
+                    </div>
+                    <div class="col-lg-2">                        
+                        <input type="text" class="form-control"  placeholder="来自xxx">
+                    </div>
+                    <div class="col-lg-9">
+                        <input type="text" class="form-control" placeholder="留言内容(可以输入140字)" maxlength="140">
+                    </div>
+                </div>
+                <!-- /.row -->
+                <!-- /.row -->
+                <div class="row" id="adminContentQuestion8">
+                    <div class="col-lg-1">
+                        <div class="checkbox"><label><input type="checkbox">显示</label></div>
+                    </div>
+                    <div class="col-lg-2">                        
+                        <input type="text" class="form-control"  placeholder="来自xxx">
+                    </div>
+                    <div class="col-lg-9">
+                        <input type="text" class="form-control" placeholder="留言内容(可以输入140字)" maxlength="140">
+                    </div>
+                </div>
+                <!-- /.row -->
+                <!-- /.row -->
+                <div class="row" id="adminContentQuestion9">
+                    <div class="col-lg-1">
+                        <div class="checkbox"><label><input type="checkbox">显示</label></div>
+                    </div>
+                    <div class="col-lg-2">                        
+                        <input type="text" class="form-control"  placeholder="来自xxx">
+                    </div>
+                    <div class="col-lg-9">
+                        <input type="text" class="form-control" placeholder="留言内容(可以输入140字)" maxlength="140">
+                    </div>
+                </div>
+                <!-- /.row -->
+                <br/>
+                <div class="row" id="adminContentSubmitBtn">
+                    <div class="col-lg-12">
+                        <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                            	提交
+                        </button>
+                        <button type="button" class="btn btn-default" onclick="$('.checkbox input').attr('checked',false)">重置</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">确认信息</h4>
+                              </div>
+                              <div class="modal-body">
+                                	你确定要把所选的留言或提问显示在大屏幕上吗？
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal" id="saveChanges" onclick="saveAdminComments()">确定</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div> 
+                        <!-- Modal -->                   
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid --> 
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="http://cdn.staticfile.org/jquery/2.1.0/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="http://cdn.staticfile.org/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<!--admin tool js-->
+	<script src="../js/adminContent.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<div ui-content-for="title">
+  <span>{{titleInfor}}</span>
+</div>
+<div class="scrollable">
+ <div class="scrollable-content">
+  <div><img src="http://gcghrcampus.b0.upaiyun.com/static/images/banner.jpg" style="width: 100%;" /></div>
+  <section id="hr-reg">
+	<form role="form" ng-submit="regFn()" id="hr-reg-form" ng-submit='login()'>
+	    <fieldset>
+	        <div class="form-group">
+	          <label>姓名*</label>
+	          <input class="form-control" required name="name" data-label="姓名" type="text" />
+	        </div>
+	
+	        <div class="form-group">
+	          <label>学校*</label>
+	          <input class="form-control" required name="school" data-label="学校" type="text" />
+	        </div>
+	        
+	        <div class="form-group">
+	          <label>专业*</label>
+	          <input class="form-control" required name="major" data-label="专业" type="text" />
+	        </div>
+	        
+	        <div class="form-group">
+	          <label>年级*</label>
+	          <p>
+	          	<select name="grade">
+	          		<option value="大一">大一</option>
+	          		<option value="大二">大二</option>
+	          		<option value="大三">大三</option>
+	          		<option value="大四">大四</option>
+	          		<option value="研一">研一</option>
+	          		<option value="研二">研二</option>
+	          		<option value="研三">研三</option>
+	          		<option value="博士在读">博士在读</option>
+	          	</select>
+	          </p>
+	        </div>
+	        
+	        <div class="form-group">
+	          <label>邮箱*</label>
+	          <input class="form-control" required data-label="邮箱" name="email" type="email" />
+	        </div>
+	        
+	        <div class="form-group">
+	          <label>手机*</label>
+	          <p style="margin-bottom: 4px;"><input data-label="手机" required pattern="^1\d{10}$" title="输入正确的手机号" name="tel" class="form-control" type="text" /></p>
+	        </div>
+	    </fieldset>
+	    <p></p>
+	    <p><button class="btn btn-primary btn-block hr-reg-buttom">注册</button></p>
+	</form>
+  </section>
+ </div>
+</div>
+<div ng-hide="hideMsgOverlay" id="hr-msg-overlay">
+    <p ng-bind-html="overlayMsg"><i class="fa fa-refresh fa-spin"></i>&nbsp;&nbsp;初始化...</p>
+</div>

@@ -1,0 +1,60 @@
+#	Licensed to the Apache Software Foundation (ASF) under one or more
+#	contributor license agreements. See the NOTICE file distributed with
+#	this work for additional information regarding copyright ownership.
+#	The ASF licenses this file to you under the Apache License, Version
+#	2.0 (the "License"); you may not use this file except in compliance
+#	with the License. You may obtain a copy of the License at
+#
+#	http://www.apache.org/licenses/LICENSE-2.0 Unless required by
+#	applicable law or agreed to in writing, software distributed under the
+#	License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+#	CONDITIONS OF ANY KIND, either express or implied. See the License for
+#	the specific language governing permissions and limitations under the
+#	License.
+com.ibm.gswt.campus.resource.TestWebService
+com.ibm.gswt.campus.resource.AdminCommentsWebService
+com.ibm.gswt.campus.resource.GetCommentWebService
+com.ibm.gswt.campus.resource.AddCommentWebService
+com.ibm.gswt.campus.resource.HandleRatingWebService
+com.ibm.gswt.campus.resource.CollectQuestionWebService
+com.ibm.gswt.campus.resource.GetQuestionWebService
+com.ibm.gswt.campus.resource.GetTopicWebService
+com.ibm.gswt.campus.resource.TopicDetailWebService
+com.ibm.gswt.campus.resource.StartShakeWebService
+com.ibm.gswt.campus.resource.ShakeStatusWebService
+com.ibm.gswt.campus.resource.ShakingWebService
+com.ibm.gswt.campus.resource.RegisterWebService
+com.ibm.gswt.campus.resource.LoginWebService
+com.ibm.gswt.campus.resource.PostCodeWebService
+com.ibm.gswt.campus.resource.DownloadExcelWebService
+com.ibm.gswt.campus.resource.DownloadCommentService
+com.ibm.gswt.campus.resource.GetAdminCommentsWebService
+com.ibm.gswt.campus.resource.SaveAdminCommentsWebService
+com.ibm.gswt.campus.resource.GetCommentsBySpeakerWebService
+com.ibm.gswt.campus.resource.AdminLoginWebService
+com.ibm.gswt.campus.resource.SaveEventWebService
+com.ibm.gswt.campus.resource.DeleteEventWebService
+com.ibm.gswt.campus.resource.GetAllEventsWebService
+com.ibm.gswt.campus.resource.GetEventByIdWebService
+com.ibm.gswt.campus.resource.SaveTopicWebService
+com.ibm.gswt.campus.resource.SaveEventUrlWebService
+com.ibm.gswt.campus.resource.FileUploadWebService
+com.ibm.gswt.campus.resource.SaveFeedbackQuestionWebService
+com.ibm.gswt.campus.resource.IsSubmittedWebService
+com.ibm.gswt.campus.resource.GetAllTitlesWebService
+com.ibm.gswt.campus.resource.GetQuestionsWebService
+com.ibm.gswt.campus.resource.SaveAnswersWebService
+com.ibm.gswt.campus.resource.DeleteTopicWebService
+com.ibm.gswt.campus.resource.AdminLogoutWebService
+com.ibm.gswt.campus.resource.DeleteQuestionWebService
+com.ibm.gswt.campus.resource.DeleteTitleWebService
+com.ibm.gswt.campus.resource.GetInitInfoWebService
+com.ibm.gswt.campus.resource.TopicDetailWebService
+com.ibm.gswt.campus.resource.GetAnswersWebService
+com.ibm.gswt.campus.resource.GetEventDescWebService
+com.ibm.gswt.campus.resource.DeleteCommentWebService
+com.ibm.gswt.campus.resource.GetRegisterUserWebService
+com.ibm.gswt.campus.resource.GetCheckedUserWebService
+com.ibm.gswt.campus.resource.LoginErrorWebService
+com.ibm.gswt.campus.resource.LoginInitWebService
+com.ibm.gswt.campus.resource.LogoutWebService

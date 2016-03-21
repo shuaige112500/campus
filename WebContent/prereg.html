@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html ng-app="HR">
+	<head>
+		<meta charset="utf-8" />
+		<title ng-bind="titleInfor"></title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta name="screen-orientation" content="portrait">
+	    <meta name="x5-orientation" content="portrait">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="yes" />
+		<link rel="stylesheet" href="http://gcghrcampus.b0.upaiyun.com/static/css/mobile-angular-ui-base.min.css" />
+		<link rel="stylesheet" href="http://gcghrcampus.b0.upaiyun.com/static/css/hr.css" />
+	</head>
+	<body ng-controller="preregCtrl">
+		<div class="app">
+			<!-- Navbars -->
+			<div class="navbar navbar-app navbar-absolute-top">
+				<div class="navbar-brand navbar-brand-center" ui-yield-to="title">
+					<span ng-bind="titleInfor"></span>
+				</div>
+				
+			    <div class="btn-group pull-right">
+					<div id="ibm-logo"></div>
+			    </div>
+			</div>
+		  	<div class="app-body">
+				<ng-view class="app-content">
+					<div ui-content-for="title">
+					  <span>注册</span>
+					</div>
+					<div class="scrollable" style="margin-top: 49px;">
+					 <div class="scrollable-content">
+					  <div><img src="http://gcghrcampus.b0.upaiyun.com/static/images/banner.jpg" style="width: 100%;" /></div>
+					  <section id="hr-reg">
+						<form role="form" ng-submit="regFn()" id="hr-reg-form" ng-submit='login()'>
+						    <fieldset>
+						        <div class="form-group">
+						          <label>姓名*</label>
+						          <input class="form-control" required name="name" data-label="姓名" type="text" />
+						        </div>
+						
+						        <div class="form-group">
+						          <label>学校*</label>
+						          <input class="form-control" required name="school" data-label="学校" type="text" />
+						        </div>
+						        
+						        <div class="form-group">
+						          <label>专业*</label>
+						          <input class="form-control" required name="major" data-label="专业" type="text" />
+						        </div>
+						        
+						        <div class="form-group">
+						          <label>年级*</label>
+						          <p>
+						          	<select name="grade">
+						          		<option value="大一">大一</option>
+						          		<option value="大二">大二</option>
+						          		<option value="大三">大三</option>
+						          		<option value="大四">大四</option>
+						          		<option value="研一">研一</option>
+						          		<option value="研二">研二</option>
+						          		<option value="研三">研三</option>
+						          		<option value="博士在读">博士在读</option>
+						          	</select>
+						          </p>
+						        </div>
+						        
+						        <div class="form-group">
+						          <label>邮箱*</label>
+						          <input class="form-control" required data-label="邮箱" name="email" type="email" />
+						        </div>
+						        
+						        <div class="form-group">
+						          <label>手机*</label>
+						          <p style="margin-bottom: 4px;"><input data-label="手机" required pattern="^1\d{10}$" title="输入正确的手机号" name="tel" class="form-control" type="text" /></p>
+						        </div>
+						    </fieldset>
+						    <p></p>
+						    <p><button class="btn btn-primary btn-block hr-reg-buttom">注册</button></p>
+						  </form>
+					  </section>
+					 </div>
+					</div>
+					<div ng-hide="hideMsgOverlay" id="hr-msg-overlay">
+					    <p ng-bind-html="overlayMsg"><i class="fa fa-refresh fa-spin"></i>&nbsp;&nbsp;初始化...</p>
+					</div>
+				</ng-view>
+		  	</div>
+		  	<!-- Modals and Overlays -->
+			<div ui-yield-to="modals"></div>
+		</div>
+		<script src="http://cdn.staticfile.org/jquery/2.1.0/jquery.min.js"></script>
+		<script src="http://cdn.staticfile.org/angular.js/1.3.0/angular.min.js"></script>
+		<script src="http://gcghrcampus.b0.upaiyun.com/static/js/prereg.min.js"></script>
+		<script src="./js/services.js"></script>
+	</body>
+</html>

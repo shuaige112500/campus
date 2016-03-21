@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>IBM校园招聘</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+	    <meta name="screen-orientation" content="portrait">
+	    <meta name="x5-orientation" content="portrait">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="yes" />
+		<link rel="stylesheet" href="http://gcghrcampus.b0.upaiyun.com/static/css/mobile-angular-ui-hover.min.css" />
+		<link rel="stylesheet" href="http://gcghrcampus.b0.upaiyun.com/static/css/mobile-angular-ui-base.min.css" />
+		<link rel="stylesheet" href="http://gcghrcampus.b0.upaiyun.com/static/css/mobile-angular-ui-desktop.min.css" />
+		<link rel="stylesheet" href="http://gcghrcampus.b0.upaiyun.com/static/css/hr.css?v=92301" />
+	</head>
+	<body ng-app="HR" ui-prevent-touchmove-defaults>
+		<div class="app">
+			<!-- Navbars -->
+			<div class="navbar navbar-app navbar-absolute-top">
+				<div class="navbar-brand navbar-brand-center" ui-yield-to="title">
+					<span>IBM校园招聘</span>
+				</div>
+			
+			    <div class="btn-group pull-right">
+					<div id="ibm-logo"></div>
+			    </div>
+
+			</div>
+			<div style="display: none" class="navbar navbar-app navbar-absolute-bottom">
+				<div class="btn-group justified">
+					<a href="#/" class="btn btn-navbar btn-icon-only"><i class="fa fa-home fa-navbar"></i> 首页</a>
+					<a href="#/lucky" class="btn btn-navbar btn-icon-only"><i class="fa fa-hand-rock-o fa-navbar"></i> 摇一摇</a>
+				</div>
+			</div>
+		  	<div class="app-body">
+				<div class="app-content">
+					<ng-view></ng-view>
+				</div>
+		  	</div>
+		  	<!-- Modals and Overlays -->
+			<div ui-yield-to="modals"></div>
+		</div>
+		<script src="http://cdn.staticfile.org/angular.js/1.3.0/angular.min.js"></script>
+		<script src="http://cdn.staticfile.org/angular.js/1.3.0/angular-animate.min.js"></script>
+		<script src="http://cdn.staticfile.org/angular.js/1.3.0/angular-route.min.js"></script>
+		<script src="http://cdn.staticfile.org/angular.js/1.3.0/angular-cookies.min.js"></script>
+		<script src="http://cdn.staticfile.org/jquery/2.1.0/jquery.min.js"></script>
+		<script src="http://gcghrcampus.b0.upaiyun.com/static/js/shake.js?v=92105"></script>
+		<script src="http://gcghrcampus.b0.upaiyun.com/static/js/mobile-angular-ui.min.js"></script>
+		<!-- Required to use $touch, $swipe, $drag and $translate services -->
+		<script src="http://gcghrcampus.b0.upaiyun.com/static/js/mobile-angular-ui.gestures.min.js"></script>
+		<script src="http://gcghrcampus.b0.upaiyun.com/static/js/hr.js?v=91902"></script>
+		<script src="http://gcghrcampus.b0.upaiyun.com/static/js/services.js?v=91901"></script>
+		<script src="http://gcghrcampus.b0.upaiyun.com/static/js/controllers/homeCtl_102902.js"></script>
+		<script src="http://gcghrcampus.b0.upaiyun.com/static/js/controllers/loginCtl_102801.js"></script>
+		<script src="http://gcghrcampus.b0.upaiyun.com/static/js/controllers/luckyCtl_100903.js"></script>
+		<script src="http://gcghrcampus.b0.upaiyun.com/static/js/controllers/detailCtrl_102902.js"></script>
+		<script src="http://gcghrcampus.b0.upaiyun.com/static/js/controllers/regCtrl_102801.js"></script>
+	</body>
+</html>

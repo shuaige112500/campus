@@ -1,0 +1,38 @@
+<div ui-content-for="title">
+  <span>{{topic.pageTitle}}</span>
+</div>
+<div class="scrollable">
+	<div class="scrollable-content">
+		<p id="hr-date">{{meetingDate}}</p> 
+		<div id="hr-detail">
+			<section id="hr-detail-info">
+				<figure class="hr-detail-thumbnail">		    		
+		    		<img ng-src="{{ speakerMap[topic.speaker] || 'http://gcghrcampus.b0.upaiyun.com/static/images/photo-none.jpg' }}" width="80" height="80" />
+		    		<section class="hr-detail-summary">
+		    			<p class="hr-detail-basic" ng-if="topic.speaker != ''"><a onclick="$.popProfile()" class="hr-detail-speaker-overlay">{{topic.speaker}}</a></p>
+						<p class="hr-detail-basic-intro">{{topic.topicDesc}}</p>
+						<p class="hr-detail-basic-vote"><span class="hr-detail-like"><i ng-class="{true: 'fa fa-heart', false: 'fa fa-heart-o'}[topic.hadRated == '1']" ng-click="topic.rate()"></i></span> {{topic.rating}}</p>
+		    		</section>
+		    	</figure>
+			</section>
+			<section id="hr-detail-comments">
+				<h3><img style="width: 35px;" src="http://gcghrcampus.b0.upaiyun.com/static/images/comments-icon.png" />&nbsp;评论 & 提问（{{commentsCount}}）</h3>
+				<form action="javascript:;" class="hr-detail-form">
+					<p class="hr-detail-styled-area"><textarea placeholder="140 字限制" ng-model="commentsArea" name="comment" id="hr-detail-comments-area"></textarea></p>
+					<p ng-bind-html="commentsMsg"></p>
+					<p><button class="hr-detail-buttom" ng-click="topic.postComment()">{{submitText}}</button></p>
+				</form>
+				<p class="hr-color-band" ng-hide="hideBand"></p>
+			</section>
+		</div>
+		<section ng-hide="hideMsgOverlay" id="hr-msg-overlay">
+			<p ng-bind-html="overlayMsg"></p>
+		</section>
+		<section id="hr-speaker-info-overlay" style="top: 10%;max-width: 90%;line-height: 20px;">
+			<div onclick="$.hideProfile()" class="hr-speaker-info-overlay-close"><img src="http://gcghrcampus.b0.upaiyun.com/static/images/camss-close.png" /></div>
+			<p style="max-height:320px; height:auto; overflow-y: scroll; overflow-x: hidden;">{{topic.speakerDesc}}</p>
+		</section>
+		<div class="hr-border-1"></div>
+		<div class="hr-border-2"></div>
+	</div>
+</div>

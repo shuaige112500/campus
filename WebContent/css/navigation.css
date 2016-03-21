@@ -1,0 +1,123 @@
+/* ------------- STYLE FOR THIS APPLICATION ------------- */
+
+/* ------------- COMMON STYLE START ------------- */
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	font-family: "Segoe UI",Helvetica,Arial,"Microsoft Jhenghei","Hiragino Sans GB","WenQuanYi Zen Hei","Microsoft Yahei",STHeiti,SimHei,"WenQuanYi Micro Hei",sans-serif;
+	font-size: 1.7em;
+	margin:0px;
+	padding:0px;
+	background-color:#F2F2F2;
+}
+
+.app-content {
+	background-color: #f2f2f2;
+	padding-left:15px;
+	padding-right:15px;
+}
+.hr-text{
+	color:#558DC3;
+	margin-top:8px;
+	margin-bottom:15px;
+	padding: 0px 15px;
+	font-size:15px;
+}
+.time-line {
+	background-image: url(../images/point.png);
+	background-repeat: no-repeat;
+	background-position: 31px top;
+	padding: 0px 8px;
+}
+.item-list {
+	border: 1px solid #D2D2D2;
+	-moz-border-radius: 3px;      /* Gecko browsers */
+	-webkit-border-radius: 3px;   /* Webkit browsers */
+	border-radius:3px;
+	background-color: #FFF;
+	width: 100%;
+	display:block;
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-bottom: 8px;
+	padding-left: 1px;
+}
+.item-list-title{
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #A2CF00;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 12px;
+	vertical-align:top;
+	margin-bottom:6px;
+}
+.item-content{
+	padding:0px 5px;
+}
+table.hr-table{
+	margin-bottom:8px;
+}
+table.location td{
+	font-size:12px;
+}
+.button-blue{
+	width:100px;
+	display:block;
+	color:#FFF;
+	text-align:center;
+	font-size:16px;
+	padding-top:6px;
+	height:30px;
+	background-color: #00A6C8;
+	margin-right: auto;
+	margin-left: auto;
+	-moz-border-radius: 3px;      /* Gecko browsers */
+	-webkit-border-radius: 3px;   /* Webkit browsers */
+	border-radius:3px;
+	margin-top:10px;
+	font-weight:bold;
+	text-decoration: none;
+	margin-bottom:3px;	
+}
+.button-green{
+	width:100px;
+	display:block;
+	color:#FFF;
+	text-align:center;
+	font-size:16px;
+	padding-top:6px;
+	height:30px;
+	background-color: #A2CF00;
+	margin-right: auto;
+	margin-left: auto;
+	-moz-border-radius: 3px;      /* Gecko browsers */
+	-webkit-border-radius: 3px;   /* Webkit browsers */
+	border-radius:3px;
+	margin-top:10px;
+	font-weight:bold;
+	text-decoration: none;	
+	margin-bottom:3px;
+}
+.item-list-title-blue{
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #00A6C8;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 12px;
+	vertical-align:top;
+	margin-bottom:6px;
+}
+.col2{
+	padding-left:10px;
+}
+
+.data-month{background:#00add2; display:block; padding-top: 4px; border:4px solid #FFFFFF; border-radius:50px; text-align:center; font-size:12px; color:#FFFFFF; line-height:18px; font-family:Arial, Helvetica, sans-serif; width: 45px; height: 41px; margin-top:20px;}
+
+.data-day{font-size:18px; font-weight:500;}
